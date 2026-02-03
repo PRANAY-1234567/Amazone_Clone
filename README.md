@@ -57,7 +57,6 @@ The project visually resembles the Amazon logo, including:
 Text styling
 
 Color matching
-
 Proper alignment
 
 (You can add a screenshot here later)
