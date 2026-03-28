@@ -11,6 +11,7 @@ A mini project to improve my frontend skills.
 📌 Project Description
 
 This project is a clone of the Amazon logo created using pure HTML and CSS.
+
 The goal of this project is to practice CSS styling, layout, and positioning while recreating a well-known brand logo.
 
 ⚠️ This project is made only for educational and practice purposes.
