@@ -6,6 +6,7 @@ A mini project to improve my frontend skills.
 ![Screenshot 2025-04-28 112037](https://github.com/user-attachments/assets/ddd653f2-b60a-404f-9760-6f7541dfe8d0)
 
 🛒 Amazon Logo Clone (HTML & CSS)
+
 📌 Project Description
 
 This project is a clone of the Amazon logo created using pure HTML and CSS.
