@@ -34,6 +34,7 @@ HTML5 – Structure
 CSS3 – Styling and layout
 
 📂 Project Structure
+
 amazon-logo-clone/
 │
 ├── index.html
