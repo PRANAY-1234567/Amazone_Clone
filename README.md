@@ -79,7 +79,6 @@ source venv/bin/activate
 ```bash
 pip install flask firebase-admin
 ```
-
 ---
 
 ## 🔥 Firebase Setup
