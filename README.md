@@ -1,68 +1,257 @@
-Amazon Logo Clone using HTML & CSS
+# Flask Website Visitor Tracking using Firebase Realtime Database
 
-Recreated the iconic Amazon logo using only HTML and CSS — no images, just pure code! Great for beginners exploring frontend design and CSS creativity.
+## 📌 Overview
 
-A mini project to improve my frontend skills.
+This project is a simple Flask web application that tracks page visits and stores visitor data in Firebase Realtime Database.
 
+Whenever a user visits a page (`Home`, `About`, or `Contact`), the application records the page name in Firebase. This demonstrates the integration of Flask with Firebase Admin SDK for backend data storage and analytics.
 
-🛒 Amazon Logo Clone (HTML & CSS)
+---
 
-📌 Project Description
+## 🚀 Features
 
-This project is a clone of the Amazon logo created using pure HTML and CSS.
+* Flask-based web application
+* Firebase Realtime Database integration
+* Tracks visits to multiple pages
+* Stores page visit records in real-time
+* Simple and beginner-friendly implementation
+* Demonstrates backend logging and analytics
 
-The goal of this project is to practice CSS styling, layout, and positioning while recreating a well-known brand logo.
+---
 
-⚠️ This project is made only for educational and practice purposes.
+## 🛠️ Technologies Used
 
-🧩 Features
+* Python
+* Flask
+* Firebase Admin SDK
+* Firebase Realtime Database
+* HTML Templates
 
-Amazon logo recreated using HTML & CSS only
+---
 
-No images used (CSS-based design)
+## 📂 Project Structure
 
-Clean and minimal code
-
-Responsive-friendly structure
-
-Beginner-friendly project
-
-🛠 Technologies Used
-
-HTML5 – Structure
-
-CSS3 – Styling and layout
-
-📂 Project Structure
-
-amazon-logo-clone/
+```text
+project/
 │
-├── index.html
-├── style.css
+├── app.py
+├── templates/
+│   ├── index.html
+│   ├── about.html
+│   └── contact.html
+│
+├── firebase-adminsdk.json
 └── README.md
+```
 
-🎯 Learning Outcomes
+---
 
-By building this project, you will learn:
+## ⚙️ Installation
 
-HTML page structure
+### 1. Clone the Repository
 
-CSS positioning and alignment
+```bash
+git clone https://github.com/your-username/flask-firebase-visitor-tracker.git
+cd flask-firebase-visitor-tracker
+```
 
-Fonts, colors, and shapes in CSS
+### 2. Create Virtual Environment (Optional)
 
-How to clone real-world UI elements
+```bash
+python -m venv venv
+```
 
-Attention to design details
+Activate:
 
-🖼 Preview
+**Windows**
 
-The project visually resembles the Amazon logo, including:
+```bash
+venv\Scripts\activate
+```
 
-Text styling
+**Linux / macOS**
 
-Color matching
+```bash
+source venv/bin/activate
+```
 
-Proper alignment
+### 3. Install Dependencies
+
+```bash
+pip install flask firebase-admin
+```
+
+---
+
+## 🔥 Firebase Setup
+
+### Step 1: Create Firebase Project
+
+1. Open Firebase Console.
+2. Create a new project.
+3. Enable Realtime Database.
+
+### Step 2: Generate Service Account Key
+
+1. Go to Project Settings.
+2. Open Service Accounts tab.
+3. Click **Generate New Private Key**.
+4. Download the JSON file.
+
+### Step 3: Update Credentials Path
+
+Replace:
+
+```python
+credentials.Certificate("path/to/serviceAccountKey.json")
+```
+
+with the path to your downloaded Firebase credentials file.
+
+### Step 4: Update Database URL
+
+Replace:
+
+```python
+databaseURL = "https://your-project-id-default-rtdb.firebaseio.com/"
+```
+
+with your Firebase Realtime Database URL.
+
+---
+
+## ▶️ Running the Application
+
+Start the Flask server:
+
+```bash
+python app.py
+```
+
+Output:
+
+```text
+* Running on http://127.0.0.1:5000
+```
+
+Open your browser:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## 📊 How Visitor Tracking Works
+
+When a user visits:
+
+### Home Page
+
+```python
+ref.push({'page':'home'})
+```
+
+Firebase stores:
+
+```json
+{
+  "page": "home"
+}
+```
+
+### About Page
+
+```python
+ref.push({'page':'about'})
+```
+
+Firebase stores:
+
+```json
+{
+  "page": "about"
+}
+```
+
+### Contact Page
+
+```python
+ref.push({'page':'contact'})
+```
+
+Firebase stores:
+
+```json
+{
+  "page": "contact"
+}
+```
+
+---
+
+## 📈 Example Database Structure
+
+```json
+{
+  "visits": {
+    "-Nabc123": {
+      "page": "home"
+    },
+    "-Nabc124": {
+      "page": "about"
+    },
+    "-Nabc125": {
+      "page": "contact"
+    }
+  }
+}
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+This project helps understand:
+
+* Flask Routing
+* Template Rendering
+* Firebase Realtime Database
+* Firebase Admin SDK
+* Backend Data Logging
+* Web Analytics Basics
+
+---
+
+## 🔮 Future Improvements
+
+* Count total page visits
+* Store visitor timestamps
+* Track unique visitors
+* Add dashboard for analytics
+* Store IP addresses (with privacy considerations)
+* Display visit statistics on admin page
+* Deploy application on cloud platforms
+
+---
+
+## 👨‍💻 Author
+
+**Pranay Jadhao**
+
+Electronics & Telecommunication Engineer
+
+Aspiring Software & Embedded Systems Engineer
+
+GitHub: https://github.com/
+
+LinkedIn: [www.linkedin.com/in/pranayjadhao](http://www.linkedin.com/in/pranayjadhao)
+
+---
+
+## 📄 License
+
+This project is open-source and available for educational and learning purposes.
+
 
 ![Screenshot 2025-04-28 112037](https://github.com/user-attachments/assets/ddd653f2-b60a-404f-9760-6f7541dfe8d0)
