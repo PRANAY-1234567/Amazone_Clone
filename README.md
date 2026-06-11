@@ -3,7 +3,6 @@
 ## 📌 Overview
 
 This project is a simple Flask web application that tracks page visits and stores visitor data in Firebase Realtime Database.
-
 Whenever a user visits a page (`Home`, `About`, or `Contact`), the application records the page name in Firebase. This demonstrates the integration of Flask with Firebase Admin SDK for backend data storage and analytics.
 
 ---
