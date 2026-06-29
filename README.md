@@ -238,9 +238,7 @@ This project helps understand:
 **Pranay Jadhao**
 
 Electronics & Telecommunication Engineer
-
 Aspiring Software & Embedded Systems Engineer
-
 GitHub: https://github.com/
 
 LinkedIn: [www.linkedin.com/in/pranayjadhao](http://www.linkedin.com/in/pranayjadhao)
