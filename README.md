@@ -249,5 +249,4 @@ LinkedIn: [www.linkedin.com/in/pranayjadhao](http://www.linkedin.com/in/pranayja
 
 This project is open-source and available for educational and learning purposes.
 
-
 ![Screenshot 2025-04-28 112037](https://github.com/user-attachments/assets/ddd653f2-b60a-404f-9760-6f7541dfe8d0)
